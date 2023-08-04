@@ -27,20 +27,19 @@ function hendleClickAdd() {
 // const amount = elements.input.value
 const allDivs = []
 function createBoxes(amount) {
-   for (let i = 0; i < amount; i += 1) {
-    // const markup = "<div style= background-color:teal;width:30px;height:30px>hello</div>"
+  for (let i = 0; i < amount; i += 1) {
+     if (amount >= 1 && amount <= 100) {
      const div = document.createElement("div")
      div.style.backgroundColor = getRandomHexColor();
      div.style.width = "30px"
      div.style.height = "30px"
      div.classList.add("js-box")
     allDivs.push(div)
+     }
    }
   elements.boxes.append(...allDivs)
 }
 // createBoxes(elements.input.value)
-
-
 
 // function hendleClick(evt) {
 //   for (let i = 1; i < elements.controls.firstChild.value; i += 1) {
