@@ -5,7 +5,7 @@ function handleSubmit(evt) {
     evt.preventDefault();
     const { email, password } = evt.currentTarget.elements
     if (email.value === "" || password.value === "") {
-        alert("All field must be fill")
+      return  alert("All field must be fill")
     }
     
     console.log({
